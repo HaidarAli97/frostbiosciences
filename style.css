@@ -885,22 +885,76 @@ img {
   line-height: 30px;
   margin-top: 20px;
 }
+.main .contact-div {
+  min-width: 100%;
+  padding: 3rem;
+  background-color: #F0EBF8;
+}
+.main .contact-div .row-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+.main .contact-div .row-con .col-con1,
+.main .contact-div .row-con .col-con2 {
+  flex-basis: 49.9%;
+  padding: 1rem;
+}
+.main .contact-div h2 {
+  font-size: 2.4rem;
+  margin-right: 1.9rem;
+}
+.main .contact-div p {
+  padding: 0.5rem;
+  color: #6F7174;
+  font-size: 1.1rem;
+  line-height: 25px;
+}
+.main .contact-div form {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main .contact-div form input {
+  min-height: 40px;
+  border-radius: 5px;
+  border: none;
+  padding: 1rem;
+}
+.main .contact-div form input:hover {
+  border: 1px solid #341D5C;
+}
+.main .contact-div form #message {
+  min-height: 180px;
+  border: none;
+}
+.main .contact-div form button {
+  padding: 1rem;
+  border: 1px solid #3C2662;
+  letter-spacing: 5px;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #3C2662;
+}
+
 @media (width <= 768px) {
-  .main .header-con .menu-con {
+  .header-con .menu-con {
     display: none;
   }
-  .main .header-con img {
+  .header-con img {
     max-width: 100px;
     align-self: flex-start;
   }
-  .main .header-con .btn-con {
+  .header-con .btn-con {
     display: none;
   }
-  .main #top-section .row-con {
+  #top-section .row-con {
     flex-direction: column;
     text-align: center;
   }
-  .main #top-section .row-con .col-2 .hero-img-con img {
+  #top-section .row-con .col-2 .hero-img-con img {
     max-width: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
