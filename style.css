@@ -20,6 +20,37 @@ img {
   max-width: 500px;
 }
 
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-col-1, .flex-col-2, .flex-col-3, .flex-col-4 {
+  flex: 1;
+  min-width: 250px;
+  padding: 1rem;
+}
+
+.flex-col-1 {
+  flex-basis: 100%;
+  max-width: 700px;
+}
+
+.flex-col-2 {
+  flex-basis: 50%;
+  max-width: 500px;
+}
+
+.flex-col-3 {
+  flex-basis: 33%;
+}
+
+.flex-col-4 {
+  flex-basis: 25%;
+}
+
 .main {
   min-width: 100%;
   scroll-behavior: smooth;
@@ -438,7 +469,7 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 5rem;
+  padding-block: 2rem;
 }
 .main .footer-section .footer a {
   font-size: 15px;
@@ -447,48 +478,39 @@ img {
 }
 .main .footer-section .footer .company-link-con, .main .footer-section .footer .legal-link-con {
   text-align: center;
+  padding: 2rem;
+  flex-basis: 20%;
 }
 .main .footer-section .footer .company-link-con p, .main .footer-section .footer .legal-link-con p {
   color: #333333;
   font-size: 18px;
   font-weight: 700;
 }
-.main .footer-section .footer .subscribe-link-con {
-  line-height: 20px;
-  padding-left: 20px;
-}
 .main .footer-section .footer .subscribe-link-con p {
-  color: #333333;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 700;
 }
-.main .footer-section .footer .subscribe-link-con .input {
-  border: 1px solid #08D7BD;
-  border-radius: 20px;
-  padding: 0.5rem 1rem;
-  font-size: 17px;
-  margin-left: 80px;
-}
-.main .footer-section .footer .subscribe-link-con .footer-btn {
-  border-radius: 20px;
+.main .footer-section .footer .subscribe-link-con .news-content-con .footer-form .mail-input {
   padding: 0.5rem 2rem;
-  border: none;
-  font-size: 15px;
-  background-color: #673AB7;
-  color: #fff;
-  letter-spacing: 4px;
-  transition: 0.6s ease;
+  border-radius: 15px;
+  border: 1px solid #06907D;
 }
-.main .footer-section .footer .subscribe-link-con .footer-btn:hover {
+.main .footer-section .footer .subscribe-link-con .news-content-con .footer-form .newsletter-submit-btn {
+  padding: 0.4rem 1rem;
+  border-radius: 12px;
   background-color: #341D5C;
   color: #fff;
-  padding-right: 3rem;
+  border: 1px solid #fff;
+  transition: 0.5s;
 }
-.main .footer-section .footer span {
+.main .footer-section .footer .subscribe-link-con .news-content-con .footer-form .newsletter-submit-btn:hover {
+  padding: 0.4rem 2rem;
+}
+.main .footer-section span {
   font-weight: 600;
   color: #6F7174;
 }
-.main .footer-section .reserve {
+.main .reserve {
   min-height: 50px;
   background-color: #3C2662;
   color: #fff;
@@ -496,83 +518,59 @@ img {
   place-content: center;
   text-align: center;
 }
-.main .about-top-section {
+
+.about-top-section {
   background-image: url(/assets/aboutbg.jpg);
 }
-.main .about-top-section .overlay {
+.about-top-section .overlay {
   width: 100%;
   height: 400px;
   position: absolute;
   background: linear-gradient(rgba(4, 238, 207, 0.747), rgba(84, 3, 212, 0.726));
 }
-.main .about-top-section .overlay .text-div {
+.about-top-section .overlay .text-div {
   text-align: center;
   padding: 7rem;
 }
-.main .about-top-section .overlay .text-div h1 {
+.about-top-section .overlay .text-div h1 {
   font-size: 40px;
   font-weight: 600;
 }
-.main .about-top-section .overlay .text-div p {
+.about-top-section .overlay .text-div p {
   font-size: 20px;
   line-height: 30px;
   margin-top: 20px;
 }
-.main .career-top-section {
-  background-image: url(assets/career_bg.jpg);
+
+.career-top-section {
+  background-image: linear-gradient(rgba(238, 4, 24, 0.747), rgba(4, 235, 93, 0.726)), url(assets/career_bg.jpg);
 }
-.main .career-top-section .overlay {
-  width: 100%;
-  height: 400px;
-  position: absolute;
-  background: linear-gradient(rgba(238, 4, 24, 0.747), rgba(4, 235, 93, 0.726));
-}
-.main .career-top-section .overlay .text-div {
+.career-top-section .text-div {
   text-align: center;
   padding: 7rem;
 }
-.main .career-top-section .overlay .text-div h1 {
+.career-top-section .text-div h1 {
   font-size: 40px;
   font-weight: 600;
 }
-.main .career-top-section .overlay .text-div p {
+.career-top-section .text-div p {
   font-size: 20px;
   line-height: 30px;
   margin-top: 20px;
 }
-.main .contact-top-section .career-top-section {
-  background-image: url();
-}
-.main .contact-top-section .career-top-section .overlay {
-  width: 100%;
-  height: 400px;
-  position: absolute;
-  background: linear-gradient(rgba(238, 4, 24, 0.747), rgba(4, 235, 93, 0.726));
-}
-.main .contact-top-section .career-top-section .overlay .text-div {
-  text-align: center;
-  padding: 7rem;
-}
-.main .contact-top-section .career-top-section .overlay .text-div h1 {
-  font-size: 40px;
-  font-weight: 600;
-}
-.main .contact-top-section .career-top-section .overlay .text-div p {
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 20px;
-}
-.main .career-top-section, .main .about-top-section, .main .contact-top-section {
+
+.career-top-section, .about-top-section, .contact-top-section {
   min-height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   color: #fff;
 }
-.main .career-top-section p, .main .about-top-section p, .main .contact-top-section p {
+.career-top-section p, .about-top-section p, .contact-top-section p {
   font-size: 20px;
 }
-.main .about-row {
+
+.about-row {
   min-width: 100%;
   padding: 3rem;
   display: flex;
@@ -580,23 +578,24 @@ img {
   align-items: center;
   padding: 3rem;
 }
-.main .about-row p {
+.about-row p {
   color: #6B6B6E;
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
 }
-.main .about-row h2 {
+.about-row h2 {
   font-size: 35px;
   color: #212529;
   margin-bottom: 20px;
 }
-.main .about-row .about-col1,
-.main .about-row .about-col2 {
+.about-row .about-col1,
+.about-row .about-col2 {
   flex-basis: 49.9%;
   padding: 3rem;
 }
-.main .why-div {
+
+.why-div {
   min-width: 100%;
   min-height: 40rem;
   align-items: center;
@@ -605,85 +604,86 @@ img {
   background-color: #F0EBF8;
   padding: 3rem;
 }
-.main .why-div h2 {
+.why-div h2 {
   color: #35D7BD;
 }
-.main .why-div h3 {
+.why-div h3 {
   color: #06907D;
 }
-.main .why-div p {
+.why-div p {
   color: #6B6B6E;
   font-weight: 400;
   font-size: 1rem;
 }
-.main .why-div .why-row1, .main .why-div .why-row2 {
+.why-div .why-row1, .why-div .why-row2 {
   display: flex;
   padding: 2.5rem;
 }
-.main .why-div img {
+.why-div img {
   max-width: 100px;
   background-color: #fff;
   border-radius: 50px;
   padding: 0.6rem;
   box-shadow: 16px 2px 8px -6px rgba(0, 0, 0, 0.15);
 }
-.main .flip-div {
+
+.flip-div {
   height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main .flip-div .card-wrapper {
+.flip-div .card-wrapper {
   display: flex;
   perspective: 1000px;
   gap: 10px;
 }
-.main .flip-div .card-wrapper .card-1, .main .flip-div .card-wrapper .card-2, .main .flip-div .card-wrapper .card-3 {
+.flip-div .card-wrapper .card-1, .flip-div .card-wrapper .card-2, .flip-div .card-wrapper .card-3 {
   flex-basis: 33.3%;
   border-radius: 15px;
 }
-.main .flip-div .card-wrapper .card {
+.flip-div .card-wrapper .card {
   width: 400px;
   height: 300px;
   transform-style: preserve-3d;
   transition: transform 0.9s ease-in-out;
   cursor: pointer;
 }
-.main .flip-div .card-wrapper .card:hover {
+.flip-div .card-wrapper .card:hover {
   transform: rotateY(180deg);
 }
-.main .flip-div .card-wrapper .card .card-front, .main .flip-div .card-wrapper .card .card-back {
+.flip-div .card-wrapper .card .card-front, .flip-div .card-wrapper .card .card-back {
   position: absolute;
   width: 100%;
   height: 100%;
   text-align: center;
   place-content: center;
-  padding: 1.8rem;
+  padding: 1.5rem;
   backface-visibility: hidden;
   border-radius: 15px;
 }
-.main .flip-div .card-wrapper .card .card-front h3, .main .flip-div .card-wrapper .card .card-back h3 {
+.flip-div .card-wrapper .card .card-front h3, .flip-div .card-wrapper .card .card-back h3 {
   font-size: 30px;
   color: #3C2662;
   margin-bottom: 1rem;
 }
-.main .flip-div .card-wrapper .card .card-front p, .main .flip-div .card-wrapper .card .card-back p {
+.flip-div .card-wrapper .card .card-front p, .flip-div .card-wrapper .card .card-back p {
   color: #341D5C;
 }
-.main .flip-div .card-wrapper .card .card-front li, .main .flip-div .card-wrapper .card .card-back li {
+.flip-div .card-wrapper .card .card-front li, .flip-div .card-wrapper .card .card-back li {
   color: #fff;
 }
-.main .flip-div .card-wrapper .card .card-back {
+.flip-div .card-wrapper .card .card-back {
   color: #fff;
   transform: rotateY(180deg);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   background: rgba(51, 18, 239, 0.27);
   background-color: #341D5C;
 }
-.main .flip-div .card-wrapper .card .card-back h3 {
+.flip-div .card-wrapper .card .card-back h3 {
   color: #fff;
 }
-.main .flip-div .card-wrapper .card .card-back .card-back-btn {
+.flip-div .card-wrapper .card .card-back .card-back-btn {
   border-radius: 20px;
   padding: 0.5rem 2rem;
   margin-top: 2rem;
@@ -694,14 +694,15 @@ img {
   letter-spacing: 4px;
   transition: 0.6s ease;
 }
-.main .flip-div .card-wrapper .card .card-front {
+.flip-div .card-wrapper .card .card-front {
   overflow: hidden;
   background: rgba(51, 18, 239, 0.27);
 }
-.main .journey-section {
+
+.journey-section {
   background-color: #F0EBF8;
 }
-.main .journey-section .journey-div {
+.journey-section .journey-div {
   max-width: 50rem;
   justify-content: center;
   align-items: center;
@@ -709,32 +710,33 @@ img {
   place-self: center;
   padding: 4rem;
 }
-.main .journey-section .journey-div h2 {
+.journey-section .journey-div h2 {
   margin-bottom: 50px;
   font-size: 60px;
 }
-.main .journey-section .journey-div P {
+.journey-section .journey-div P {
   color: #333333;
   line-height: 25px;
   font-size: 1rem;
 }
-.main .shapping-con {
+
+.shapping-con {
   min-width: 100%;
   padding: 3rem;
   background-color: #F0EBF8;
 }
-.main .shapping-con .row-con {
+.shapping-con .row-con {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 3rem;
 }
-.main .shapping-con .row-con .col-con1,
-.main .shapping-con .row-con .col-con2 {
+.shapping-con .row-con .col-con1,
+.shapping-con .row-con .col-con2 {
   flex-basis: 49.9%;
   padding: 1rem;
 }
-.main .shapping-con .row-con .col-con1 img {
+.shapping-con .row-con .col-con1 img {
   animation: appear 5s linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
@@ -749,20 +751,21 @@ img {
     scale: 1;
   }
 }
-.main .shapping-con .row-con h1 {
+.shapping-con .row-con h1 {
   font-size: 2.2rem;
   margin-right: 1.9rem;
 }
-.main .shapping-con .row-con p {
+.shapping-con .row-con p {
   padding: 0.5rem;
   color: #6F7174;
   font-size: 1.1rem;
   line-height: 25px;
 }
-.main .mission-section {
+
+.mission-section {
   background-color: #DDF0ED;
 }
-.main .mission-section .mission-div {
+.mission-section .mission-div {
   max-width: 50rem;
   justify-content: center;
   align-items: center;
@@ -770,7 +773,7 @@ img {
   place-self: center;
   padding: 4rem;
 }
-.main .mission-section .mission-div img {
+.mission-section .mission-div img {
   min-width: 650px;
   animation: appear 5s linear;
   animation-timeline: view();
@@ -786,16 +789,17 @@ img {
     scale: 1;
   }
 }
-.main .mission-section .mission-div h2 {
+.mission-section .mission-div h2 {
   margin-bottom: 50px;
   font-size: 40px;
 }
-.main .mission-section .mission-div P {
+.mission-section .mission-div P {
   color: #333333;
   line-height: 25px;
   font-size: 1rem;
 }
-.main .parent-con {
+
+.parent-con {
   width: 100%;
   height: 28rem;
   display: flex;
@@ -804,13 +808,13 @@ img {
   padding: 1rem;
   gap: 5px;
 }
-.main .parent-con .card-inner-1, .main .parent-con .card-inner-2, .main .parent-con .card-inner-3 {
+.parent-con .card-inner-1, .parent-con .card-inner-2, .parent-con .card-inner-3 {
   flex-basis: 33.33%;
 }
-.main .parent-con .hidden-card-1, .main .parent-con .hidden-card-2, .main .parent-con .hidden-card-3 {
+.parent-con .hidden-card-1, .parent-con .hidden-card-2, .parent-con .hidden-card-3 {
   flex-basis: 33.33%;
 }
-.main .parent-con .card-inner {
+.parent-con .card-inner {
   min-width: 300px;
   min-height: 300px;
   position: relative;
@@ -821,20 +825,20 @@ img {
   overflow: hidden;
   padding: 1rem;
 }
-.main .parent-con .card-inner small {
+.parent-con .card-inner small {
   font-size: 20px;
   color: #fff;
 }
-.main .parent-con .card-inner:hover > .hidden-card {
+.parent-con .card-inner:hover > .hidden-card {
   top: 0;
   right: 0;
 }
-.main .parent-con .card-inner .card-inner,
-.main .parent-con .card-inner .hidden-card {
+.parent-con .card-inner .card-inner,
+.parent-con .card-inner .hidden-card {
   width: 100%;
   height: 100%;
 }
-.main .parent-con .card-inner .hidden-card {
+.parent-con .card-inner .hidden-card {
   min-width: 200px;
   min-height: 200px;
   background-color: #a38ccc;
@@ -847,11 +851,12 @@ img {
   transition: 0.7s ease;
   padding: 1.4rem;
 }
-.main .text-div {
+
+.text-div {
   min-width: 200px;
   max-height: 300px;
 }
-.main .text-div .text-con {
+.text-div .text-con {
   width: 50%;
   min-height: 200px;
   text-align: center;
@@ -859,78 +864,75 @@ img {
   color: #341D5C;
   padding: 1rem;
 }
-.main .text-div .text-con p {
+.text-div .text-con p {
   line-height: 30px;
   font-size: 17px;
 }
-.main .contact-top-section {
-  background-image: url(assets/contact_bg.jpg);
+
+.contact-top-section {
+  background-image: linear-gradient(rgba(2, 14, 22, 0.775), rgba(208, 4, 235, 0.504)), url(assets/contact_bg.jpg);
 }
-.main .contact-top-section .overlay {
-  width: 100%;
-  height: 400px;
-  position: absolute;
-  background: linear-gradient(rgba(2, 14, 22, 0.775), rgba(208, 4, 235, 0.504));
-}
-.main .contact-top-section .overlay .text-div {
+.contact-top-section .text-div {
   text-align: center;
   padding: 7rem;
 }
-.main .contact-top-section .overlay .text-div h1 {
+.contact-top-section .text-div h1 {
   font-size: 40px;
   font-weight: 600;
 }
-.main .contact-top-section .overlay .text-div p {
+.contact-top-section .text-div p {
   font-size: 20px;
   line-height: 30px;
   margin-top: 20px;
 }
-.main .contact-div {
+
+.contact-div {
   min-width: 100%;
   padding: 3rem;
   background-color: #F0EBF8;
 }
-.main .contact-div .row-con {
+.contact-div .row-con {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 3rem;
 }
-.main .contact-div .row-con .col-con1,
-.main .contact-div .row-con .col-con2 {
+.contact-div .row-con .col-con1,
+.contact-div .row-con .col-con2 {
   flex-basis: 49.9%;
   padding: 1rem;
 }
-.main .contact-div h2 {
+.contact-div h2 {
   font-size: 2.4rem;
   margin-right: 1.9rem;
 }
-.main .contact-div p {
+.contact-div p {
   padding: 0.5rem;
   color: #6F7174;
   font-size: 1.1rem;
   line-height: 25px;
 }
-.main .contact-div form {
+.contact-div form {
   max-width: 400px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.main .contact-div form input {
+.contact-div form input {
   min-height: 40px;
   border-radius: 5px;
+  border: 1px solid #fff;
+  padding: 1rem;
+}
+.contact-div form input:hover {
+  border: 1px solid #341D5C;
+  outline: none;
+}
+.contact-div form #message {
   border: none;
   padding: 1rem;
 }
-.main .contact-div form input:hover {
-  border: 1px solid #341D5C;
-}
-.main .contact-div form #message {
-  min-height: 180px;
-  border: none;
-}
-.main .contact-div form button {
+.contact-div form button {
   padding: 1rem;
   border: 1px solid #3C2662;
   letter-spacing: 5px;
@@ -955,6 +957,6 @@ img {
     text-align: center;
   }
   #top-section .row-con .col-2 .hero-img-con img {
-    max-width: 50px;
+    max-width: 40px;
   }
 }/*# sourceMappingURL=style.css.map */

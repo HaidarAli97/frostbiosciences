@@ -9,6 +9,19 @@
         ">
     <!-- //////my css link -->
     <link rel="stylesheet" href="/style.css">
+
+    <!-- /////// script for smartupp//// -->
+    <script type="text/javascript">
+        var _smartsupp = _smartsupp || {};
+        _smartsupp.key = 'fe28f1ce9cdabca0dd725d0d1984cab41702d290';
+        window.smartsupp || (function (d) {
+            var s, c, o = smartsupp = function () { o._.push(arguments) }; o._ = [];
+            s = d.getElementsByTagName('script')[0]; c = d.createElement('script');
+            c.type = 'text/javascript'; c.charset = 'utf-8'; c.async = true;
+            c.src = 'https://www.smartsuppchat.com/loader.js?'; s.parentNode.insertBefore(c, s);
+        })(document);
+    </script>
+    <noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
     <!--//////boostrap link for js//////  -->
     <script defer src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
     "></script>
@@ -32,14 +45,12 @@
         </div>
 
         <div class="career-top-section">
-            <div class="overlay">
                 <div class="text-div">
                 <h1>Career</h1>
                 <p>Join us in our endeavor to transform healthcare through cutting-edge pharmaceutical research. Become an essential
                 member
                 of our team as we aim to progress the biopharmaceuticals industry and improve people's lives through innovative
                 treatments</p>
-                </div>
                 </div>
             </div>
 
@@ -163,38 +174,44 @@
                 <button class="sub-footer-btn">Learn More</button>
             </div>
 
-            <div class="footer-section">
-                <div class="footer">
-                    <div class="company-link-con">
-                        <p>Company Links</p>
-                        <a href="#">Contact</a><br>
-                        <a href="#">About Us</a><br>
-                        <a href="#">Career</a>
-                    </div>
-            
-                    <div class="legal-link-con">
-                        <p>Legal Links</p>
-                        <a href="#">Terms</a><br>
-                        <a href="#">Privacy Policy</a>
-                    </div>
-            
-                    <div class="subscribe-link-con">
-                        <p>SUBSCRIBE TO NEWSLETTER</p><br>
-                        <div class="subscribe-con">
-                            <input type="text" placeholder="Enter Your Email" class="input">
-                            <button class="footer-btn">Subscribe</button><br><br><br>
-                        </div>
-            
-                        <div class="address"> <span>Address:</span> 400 W Roswell, NM 88201, United States.</div><br>
-                        <div class="phone"><span>Phone:</span> 5054644207 </div><br>
-                        <div class="email"><span>Email:</span> info@frostbiosciences.com</div><br>
-                    </div>
+        <div class="footer-section">
+        
+        
+            <div class="footer flex-row">
+                <div class="company-link-con flex-col-3">
+                    <p>Company Links</p>
+                    <a href="#">Contact</a><br>
+                    <a href="#">About Us</a><br>
+                    <a href="#">Career</a>
                 </div>
-            
-                <div class="reserve">
-                    <p>© 2025 frosttbiosciences | All rights reserved.</p>
+        
+                <div class="legal-link-con flex-col-3">
+                    <p>Legal Links</p>
+                    <a href="#">Terms</a><br>
+                    <a href="#">Privacy Policy</a>
+                </div>
+        
+        
+                <div class="subscribe-link-con flex-col-3">
+                    <p> SUBSCRIBE TO NEWSLETTER</p>
+                    <div class="news-content-con">
+                        <form action="" class="footer-form">
+                            <input type="text" placeholder="Enter your email" class="mail-input">
+                            <button type="submit" class="newsletter-submit-btn">Subscribe
+                            </button>
+                        </form>
+                    </div>
+        
+                    <div class="address"> <span>Address:</span> 400 W Roswell, NM 88201, United States.</div><br>
+                    <div class="phone"><span>Phone:</span> 5054644207 </div><br>
+                    <div class="email"><span>Email:</span> info@frostbiosciences.com</div><br>
                 </div>
             </div>
+        
+            <div class="reserve">
+                <p>© 2025 frosttbiosciences | All rights reserved.</p>
+            </div>
+        </div>
         </div>
 </body>
 </html>
