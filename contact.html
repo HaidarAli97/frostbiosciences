@@ -25,11 +25,18 @@
             <div class="img-con">
                 <img src="/assets/logo.png" alt="">
             </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div class="menu-con">
-                <a href="/index.html">Home</a>
-                <a href="/careers.html">Careers</a>
-                <a href="/about.html">About Us</a>
-                <a href="/contact.html">Contact Us</a>
+                <ul class="nav-list">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/careers.html">Careers</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                </ul>
             </div>
             <div class="btn-con">
                 <button class="header-btn">We're Hiring</button>
@@ -38,7 +45,7 @@
 
         <div class="contact-top-section">
             <div class="overlay">
-                <div class="text-div">
+                <div class="text-div reveal">
                     <h1>Contact Us</h1>
                     <p>We're always here to help. Feel free to reach out to us with any questions or concerns you may have.</p>
                 </div>
@@ -48,14 +55,14 @@
 
         <div class="contact-div">
             <div class="row-con">
-                <div class="col-con1">
+                <div class="col-con1 reveal reveal-left">
                         <h2>Join Our Amazing Team Of Experts</h2>
                         <p>Are you passionate about pioneering cell imaging solutions in biotechnology? Join frost and become an integral part
                             of
                             our dynamic team committed to advancing the frontiers of scientific knowledge, leveraging cutting-edge technology to
                             improve cancer immunotherapy outcomes.</p>
                 </div>
-                <div class="col-con2">
+                <div class="col-con2 reveal reveal-right">
                     <h2>Get In Touch With Us</h2>
                     <form action="form">
                         <input type="name" placeholder="Full Name" id="name">
@@ -117,5 +124,6 @@
                 </div>
             </div>
     </div>
+    <script src="/script.js"></script>
 </body>
 </html>
