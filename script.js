@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    let revealEls = document.querySelectorAll('.reveal');
-    let revealObserver = new IntersectionObserver(function (entries) {
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function () {
         revealObserver.observe(el);
     });
 
-    let hamburger = document.querySelector('.hamburger');
-    let menuCon = document.querySelector('.menu-con');
+    const hamburger = document.querySelector('.hamburger');
+    const menuCon = document.querySelector('.menu-con');
     if (hamburger && menuCon) {
         hamburger.addEventListener('click', function () {
             menuCon.classList.toggle('open');
