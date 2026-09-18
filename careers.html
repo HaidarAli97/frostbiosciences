@@ -33,11 +33,18 @@
             <div class="img-con">
                 <img src="/assets/logo.png" alt="">
             </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div class="menu-con">
-                <a href="/index.html">Home</a>
-                <a href="/careers.html">Careers</a>
-                <a href="/about.html">About Us</a>
-                <a href="/contact.html">Contact Us</a>
+                <ul class="nav-list">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/careers.html">Careers</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                </ul>
             </div>
             <div class="btn-con">
                 <button class="header-btn">We're Hiring</button>
@@ -45,7 +52,7 @@
         </div>
 
         <div class="career-top-section">
-                <div class="text-div">
+                <div class="text-div reveal">
                 <h1>Career</h1>
                 <p>Join us in our endeavor to transform healthcare through cutting-edge pharmaceutical research. Become an essential
                 member
@@ -55,10 +62,10 @@
             </div>
 
             <div class="about-row">
-                <div class="about-col1">
+                <div class="about-col1 reveal reveal-left">
                     <img src="/assets/global_img.png" alt="">
                 </div>
-                <div class="about-co2">
+                <div class="about-co2 reveal reveal-right">
                     <h2>Research & Development Strategy</h2>
                     <p>Our R&D approach is tailored to tackle the complex challenges within the cell imaging landscape. We recognize the
                     multifaceted nature of diseases and prioritize developing therapies that address diverse cellular mechanisms
@@ -71,19 +78,19 @@
             <div class="why-div">
                 <h2>Why Choose frost?</h2>
                 <div class="why-row1">
-                        <div class="why-row1-col col1">
+                        <div class="why-row1-col col1 reveal">
                             <h3>Cutting-Edge Research</h3>
                             <img src="/assets/research.gif" alt="">
                             <p>Join our team and contribute to pioneering research that drives innovation in cell imaging, focusing on advanced
                             solutions to improve patient outcomes.</p>
                         </div>
-                        <div class="why-row1-col col2">
+                        <div class="why-row1-col col2 reveal" style="transition-delay: 0.15s;">
                             <h3>Collaborative Environment</h3>
                             <img src="/assets/collaboration.gif" alt="">
                             <p>Experience a collaborative and inclusive work environment, where teamwork and diverse perspectives are valued and
                             encouraged to solve complex challenges in cell imaging.</p>
                         </div>
-                        <div class="why-row1-col col3">
+                        <div class="why-row1-col col3 reveal" style="transition-delay: 0.3s;">
                             <h3>Professional Development</h3>
                             <img src="/assets/professional.gif" alt="">
                             <p>Grow your career through continuous learning and skill enhancement opportunities designed to support your professional
@@ -92,13 +99,13 @@
                     </div>
                     
                     <div class="why-row2">
-                        <div class="why-row2-col col1">
+                        <div class="why-row2-col col1 reveal">
                             <h3>Impactful Work</h3>
                             <img src="/assets/work.gif" alt="">
                             <p>Make a meaningful impact on healthcare by contributing to projects and initiatives that leverage cell imaging technology
                             to advance biomedical research and improve patient outcomes.</p>
                         </div>
-                        <div class="why-row2-col col2">
+                        <div class="why-row2-col col2 reveal" style="transition-delay: 0.15s;">
                             <h3>State-of-the-Art Facilities</h3>
                             <img src="/assets/facility.gif" alt="">
                             <p>Work in state-of-the-art facilities, equipped with advanced technologies and resources to support your research
@@ -108,7 +115,7 @@
                 </div>
                 
                 <div class="flip-div">
-                    <div class=" card-wrapper card-wrapper-1">
+                    <div class=" card-wrapper card-wrapper-1 reveal reveal-scale">
                         <div class="card card-1">
                             <div class="card-front">
                                 <h3>Research Assistant</h3>
@@ -213,5 +220,6 @@
             </div>
         </div>
         </div>
+    <script src="/script.js"></script>
 </body>
 </html>
