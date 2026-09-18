@@ -1462,6 +1462,17 @@ img{
                         }
                     }
                 }
+
+                .col-2{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .col-2 .hero-img-con{
+                    width: 220px;
+                    height: 220px;
+                }
             }
         }
     }
